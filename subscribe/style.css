@@ -1,0 +1,137 @@
+/* تنسيق جسم الصفحة بالكامل وتحديد الخط والخلفية واتجاه النص */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f1f3;
+    color: #34252a;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+}
+
+/* تنسيق رأس وتذييل جميع الصفحات باللون العنابي الداكن */
+header, footer {
+    background-color: #651d32;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* إزالة المسافة العلوية من عنوان الصفحة الرئيسي */
+header h1 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+/* إزالة رموز القائمة الافتراضية من قائمة التنقل */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+/* عرض روابط التنقل بجانب بعضها مع مسافات مناسبة */
+nav li {
+    display: inline-block;
+    margin: 5px 8px;
+}
+
+/* تنسيق روابط الرأس والتذييل */
+nav a, footer a {
+    color: white;
+    text-decoration: none;
+}
+
+/* إظهار خط أسفل الرابط عند مرور المؤشر عليه */
+nav a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+/* تحديد عرض المحتوى الرئيسي ووضعه في منتصف الصفحة */
+main {
+    max-width: 950px;
+    margin: auto;
+    padding: 25px;
+}
+
+/* تنسيق الأقسام والمقالات على هيئة بطاقات بيضاء */
+section, article {
+    background-color: white;
+    border: 1px solid #dbc8cf;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(70, 20, 38, 0.12);
+}
+
+/* تلوين عناوين الأقسام بما يتناسب مع الهوية العنابية */
+h2, h3 {
+    color: #651d32;
+}
+
+/* تنسيق حقول الإدخال والقوائم ومربعات النص */
+input[type="text"], input[type="email"], input[type="password"],
+input[type="tel"], input[type="month"], input[type="search"],
+select, textarea {
+    width: 97%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #cfaeb9;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+
+/* تنسيق الأزرار والروابط التي تظهر على هيئة زر */
+button, .button {
+    display: inline-block;
+    background-color: #7a2642;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 11px 22px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* تغيير لون الزر عند مرور المؤشر عليه */
+button:hover, .button:hover {
+    background-color: #4a1424;
+}
+
+/* تنسيق السعر في صفحة الاشتراك */
+.price {
+    color: #7a2642;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* إضافة مسافة أعلى تذييل كل صفحة */
+footer {
+    margin-top: 20px;
+}
+
+/* ترتيب روابط التواصل أسفل معلومات الحقوق */
+.social-links {
+    margin-top: 12px;
+}
+
+/* تنسيق كل رابط من روابط التواصل */
+.social-link {
+    display: inline-block;
+    margin: 5px 10px;
+}
+
+/* تصميم الأيقونة النصية بشكل دائري دون استخدام مكتبات خارجية */
+.social-icon {
+    display: inline-block;
+    background-color: white;
+    color: #651d32;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    border-radius: 50%;
+    font-weight: bold;
+    text-align: center;
+}
