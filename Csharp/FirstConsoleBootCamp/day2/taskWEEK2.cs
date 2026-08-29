@@ -1,0 +1,51 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace FirstConsoleBootCamp.day2
+{
+    internal class taskWEEK2
+    {
+        /*static void Main(string[] args)
+        {
+            Random rnd = new Random();
+            int correctCount = 0;
+            int wrongCount = 0;
+            for (int i = 1; i <= 10; i++)
+            {
+                int num1 = rnd.Next(1, 11);
+                int num2 = rnd.Next(1, 11);
+
+                Console.WriteLine($"{i} - What is {num1} * {num2}?");
+                Console.Write("Enter Answer:");
+
+                int answer = int.Parse(Console.ReadLine());
+                int mult = num1 * num2;
+                if (answer == mult)
+                {
+                     Console.WriteLine("Correct!\n");
+                    correctCount++;
+                }
+                else
+                {
+                     Console.WriteLine($"Wrong!! The Correct Answer is ={mult}. \n");
+                    wrongCount++;
+                }
+            }
+            if (correctCount > wrongCount)
+            {
+                Console.WriteLine("Well Done!");
+            }
+            else
+            {
+                Console.WriteLine("Keep practicing your math skills.");
+            }
+            Console.WriteLine($"-The Number of Corrects Answers is:({correctCount}).\n-The Number of Wrong Answers is:({wrongCount}).");
+            Console.WriteLine("End Task ~ Thank You");
+
+            Console.ReadKey(true); 
+        }*/
+    }
+}

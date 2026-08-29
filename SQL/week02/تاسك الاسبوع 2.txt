@@ -1,0 +1,13 @@
+select
+		d.department_id, d.department_name, max(salary)'Maximum salary',
+		min(salary)'Minimum salary',sum(salary)'Total salary',
+		avg(salary)'Averge salary',count(d.department_id)'Number of employees'
+		from employees e join departments d
+		on e.department_id = d.department_id
+		where d.department_id > 30
+	group by
+		d.department_id, d.department_name
+		having
+		count(d.department_id) >= 5
+	order by 
+	d.department_id

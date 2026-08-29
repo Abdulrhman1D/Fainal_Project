@@ -1,0 +1,25 @@
+body{
+    background-color: rgb(226, 226, 223);
+    text-align: center;
+}
+
+ol{
+    text-align: center;
+    color: rgb(31, 148, 43);
+}
+
+ul{
+    text-align: center;
+    color: rgb(177, 40, 102);
+}
+
+
+img{
+    width: 200px;
+    
+}
+
+
+p{
+    background-color: rgb(160, 68, 209);
+}
