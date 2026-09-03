@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+var salary  = parseInt(prompt("Enter Your Salary"))
+var annual = salary * 12;
+if(annual >=12000){
+document.write(`<h2>High Salary ${annual}</h2>`);
+
+}
+else if (annual >= 6000)
+{
+    document.write(`<h2>Normal Salary</h2>`);
+}
+else if (annual >= 3000)
+{
+    document.write(`<h2>Low  Salary</h2>`);
+}
+else
+{
+     document.write(`<h2>very Low  Salary</h2>`);
+}
+     const hour = new Date().getHours();
+    </script>
+</body>
+
+</html>
