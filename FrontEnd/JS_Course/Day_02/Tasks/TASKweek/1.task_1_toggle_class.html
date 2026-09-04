@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1 - Toggle a CSS Class</title>
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+        }
+
+        .highlight {
+            background-color: yellow;
+        }
+
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Task 1: Toggle a CSS Class</h2>
+
+    <p id="para">Click the button to highlight this paragraph.</p>
+    <button id="btn">Toggle Highlight</button>
+
+    <script>
+        document.getElementById("btn").addEventListener("click", () => {
+            document.getElementById("para").classList.toggle("highlight");
+        });
+    </script>
+</body>
+
+</html>

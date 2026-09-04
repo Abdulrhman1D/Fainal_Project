@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3 - User Data</title>
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Task 3: Display User Data</h2>
+
+    <table id="usersTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script>
+        const users = [
+            { name: "Abdulrhman Nasser", email: "abdulrhman@example.com" },
+            { name: "Ghouson", email: "Ghouson@example.com" },
+            { name: "Khalid Abdulrhman", email: "khabdulrhman@example.com" }
+        ];
+
+        const tableBody = document.querySelector("#usersTable tbody");
+
+        users.forEach(user => {
+            const row = document.createElement("tr");
+
+            row.innerHTML = `
+                <td>${user.name}</td>
+                <td>${user.email}</td>
+            `;
+
+            tableBody.appendChild(row);
+        });
+    </script>
+</body>
+
+</html>
